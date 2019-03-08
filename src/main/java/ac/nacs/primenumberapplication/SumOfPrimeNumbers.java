@@ -12,5 +12,6 @@ public class SumOfPrimeNumbers {
                    // primeNumbersTillHundred.createPrimeList().remove(0);
                 }
             return sum;
+
         }
 }

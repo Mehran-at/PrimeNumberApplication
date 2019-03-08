@@ -28,5 +28,6 @@ public class PrimeNumberApplication {
         System.out.println("First 100 prime numbers are: " + primeNumbersTillHundred.createPrimeList());
         System.out.println("The size of the list of prime numbers is " + (primeNumbersTillHundred.createPrimeList().size()));
         System.out.println("Sum of first hundred prime numbers is: " + sumOfPrimeNumbers.getSum());
+
     }
 }
