@@ -1,16 +1,20 @@
 package ac.nacs.primenumberapplication;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class PrimeNumbersTillHundred {
+    private final Integer max;
+
     Integer i = 2;
 
-    public List<Integer> createPrimeString() {
+    public List<Integer> createPrimeList() {
         List<Integer> premiumNumbersFound = new ArrayList<>();
-        while (premiumNumbersFound.size()<100) {
+        while (premiumNumbersFound.size() < max) {
                 if (checkPrime(i)) {
                     premiumNumbersFound.add(i);
                 }
